@@ -1,0 +1,14 @@
+numero = str(input('digite um número:'))
+
+if numero[-1] == '0':
+    print('par')
+elif numero[-1] == '2':
+    print('par')
+elif numero[-1] == '4':
+    print('par')
+elif numero[-1] == '6':
+    print('par')
+elif numero[-1] == '8':
+    print('par')
+else:
+    print('impar')
