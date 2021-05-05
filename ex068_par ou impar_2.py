@@ -2,10 +2,12 @@ from random import randint
 cont = 0
 
 while True:
-    print('[0] PAR')
-    print('[1] ÍMPAR')
-    jogadoresc = int(input('Digite a opção escolhida:'))
-    if jogadoresc == 0:
+    jogadoresc = ' '
+    while jogadoresc not in 'PI':
+        print('[P] PAR')
+        print('[I] ÍMPAR')
+        jogadoresc = str(input('Digite a opção escolhida:')).strip().upper()[0]
+    if jogadoresc == 'P':
         print(f'Jogador escolheu PAR')
         print(f'computador escolheu ÍMPAR')
     else:
@@ -20,12 +22,12 @@ while True:
         print("Deu Par")
     else:
         print('Deu Ímpar')
-    if jogadoresc == 0:
+    if jogadoresc == 'P':
         if resultado == 0:
             print('Jogador venceu')
         else:
             print('Computador venceu')
-    if  jogadoresc == 1:
+    if  jogadoresc == 'I':
         if resultado == 1:
             print('Jogador venceu')
         else:
