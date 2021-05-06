@@ -1,6 +1,4 @@
-contM = 0
-contidade = 0
-contfidade = 0
+contM = contidade = contfidade = 0
 while True:
     perg = ' '
     sexo = ' '
